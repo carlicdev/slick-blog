@@ -1,0 +1,27 @@
+{
+  "name": "slick-blog",
+  "version": "1.0.0",
+  "description": "blog with react express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "client": "npm run start --prefix client",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "blog",
+    "react",
+    "express",
+    "bigSlick"
+  ],
+  "author": "CarliC",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
